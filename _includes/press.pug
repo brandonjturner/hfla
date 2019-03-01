@@ -1,0 +1,19 @@
+section#press.content-section.press
+  .page-contain
+    | {% for item in site.data.testimonial %}
+    blockquote.quote
+      p {{ item.quote }}
+      cite.type-h4 {{ item.source }}
+      img(src='{{item.imgUrl}}').quote-tmb
+    | {% endfor %}
+    h2 Press
+    ul.news-cards.unstyled-list
+      | {% for item in site.data.press %}
+      li
+        .news-card
+          .news-card-inner
+            .news-body
+              h4.news-title
+                a(href='{{item.url}}') {{ item.title }}
+              p {{ item.source }}
+      | {% endfor %}
