@@ -1,0 +1,11 @@
+section#sponsors.content-section
+    .section-inner.page-contain
+      .section-body-full
+        h2 Sponsors
+        .logo-garden
+          ul.unstyled-list
+            | {% for item in site.data.sponsors %}
+            li.logo
+              a(href="{{item.link}}" taget="_blank")
+                img(src="{{baseurl}}{{item.imgUrl}}" alt="{{item.name}}")
+            | {% endfor %}
