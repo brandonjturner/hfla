@@ -1,9 +1,13 @@
 .social-links
   ul.inline-list.social-list
     | {% for item in site.data.navigation.social %}
+    | {% if item.header %}
     li
       a(href="{{ item.link }}" target="_blank" class="js-social-link js-social-link-{{item.name | downcase}}")
-        img(class="icon icon-{{item.name | downcase}}" src="{{ site.baseurl}}{{item.icon }}")
+        | {% if item.iconUrl %}
+        |   {%- include {{site.baseurl}}{{item.iconUrl}}.svg -%}
+        | {% endif %}
         span.sr-only
           | {{item.name}}
+    | {% endif %}
     | {% endfor %}
