@@ -1,0 +1,12 @@
+- name: Github
+  link: https://github.com/hackforla
+  icon: /assets/images/icon-github.svg
+- name: Slack
+  link: https://hackforla-slack.herokuapp.com/
+  icon: /assets/images/icon-slack.svg
+- name: Facebook
+  link: https://hackforla-slack.herokuapp.com/
+  icon: /assets/images/icon-facebook.svg
+- name: Medium
+  link: https://medium.com/hack-for-la
+  icon: /assets/images/icon-medium.svg
