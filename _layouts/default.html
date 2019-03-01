@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/scss/styles.css" />
+  </head>
+
+  <body>
+    <div id="app">
+      <a id="skip-link" className="sr-only-focusable" href="#content">
+        Skip to main content.
+      </a>
+      {%- include header.pug -%}
+      <main>
+        {{ content }}
+      </main>
+
+      {%- include footer.pug -%}
+    </div>
+  </body>
+</html>
