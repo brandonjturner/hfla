@@ -1,0 +1,7 @@
+header.hero
+  .hero-inner
+    | {% for item in site.data.hero %}
+    h1 {{item.title}}
+    p.type-featured {{item.dek}}
+    | {% endfor %}
+    |{% include forms/hero-form.pug %}
