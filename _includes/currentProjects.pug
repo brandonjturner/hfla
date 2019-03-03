@@ -6,11 +6,14 @@ section#projects.content-section.projects
       | {% assign project = project_hash[1] %}
       li(class="project-card")
         .project-card-inner
+
           .project-tmb('project-tmb')
             img(src='{{project.image}}').project-tmb-img
+
           .project-body
             h4(class="project-title") {{ project.title }}
             p(class="project-description") {{ project.description }}
+
             .project-links(v-if='project.links')
               strong
                 |  Links: 
@@ -20,13 +23,23 @@ section#projects.content-section.projects
                   | , 
                   |
                 | {% endfor %}
-              .project.partner(v-if='project.partner')
+
+            .project.partner
+              | {% if project.partner %}
               strong Partner:
               |  {{ project.partner }}
-            .project-needs(v-if='project.looking')
+              | {% endif %}
+
+            .project-needs
+              | {% if project.looking %}
               strong Looking for:
               |  {{ project.looking }}
-            .project-location(v-if='project.location')
+              | {% endif %}
+
+            .project-location
+              | {% if project.location %}
               strong Location:
               |  {{ project.location }}
+              | {% endif %}
+
       | {% endfor %}
