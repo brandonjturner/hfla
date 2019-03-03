@@ -1,0 +1,32 @@
+section#projects.content-section.projects
+  .page-contain.projects-inner
+    h2.project-header Current Projects
+    ul.project-list.unstyled-list
+      | {% for project_hash in site.data.projects %}
+      | {% assign project = project_hash[1] %}
+      li(class="project-card")
+        .project-card-inner
+          .project-tmb('project-tmb')
+            img(src='{{project.image}}').project-tmb-img
+          .project-body
+            h4(class="project-title") {{ project.title }}
+            p(class="project-description") {{ project.description }}
+            .project-links(v-if='project.links')
+              strong
+                |  Links: 
+                | {% for item in project.links %}
+                a(href="{{ item.url }}", target='_blank') {{ item.name }}
+                template(v-if='Object.keys(project.links).length > index + 1')
+                  | , 
+                  |
+                | {% endfor %}
+              .project.partner(v-if='project.partner')
+              strong Partner:
+              |  {{ project.partner }}
+            .project-needs(v-if='project.looking')
+              strong Looking for:
+              |  {{ project.looking }}
+            .project-location(v-if='project.location')
+              strong Location:
+              |  {{ project.location }}
+      | {% endfor %}
