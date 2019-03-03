@@ -1,1 +1,0 @@
-project-cards folder houses each project card file
