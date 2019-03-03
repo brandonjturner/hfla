@@ -1,0 +1,14 @@
+filename: engage
+title: Engage
+description: Engage is a platform to stay up to date on your local issues, making it
+      easy to get your voice heard.
+image: /assets/images/projectcards/project-engage.jpg
+links: 
+  - name: Github
+    url: 'https://github.com/hackla-engage'
+  - name: Site
+    url: 'https://engage-santa-monica.herokuapp.com/'
+looking: NLP engineers, Django developers (API), React developers, UX designers,
+      anyone else...
+location: Santa Monica
+partner: City of Santa Monica
