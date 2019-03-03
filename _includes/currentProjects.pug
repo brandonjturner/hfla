@@ -2,7 +2,7 @@ section#projects.content-section.projects
   .page-contain.projects-inner
     h2.project-header Current Projects
     ul.project-list.unstyled-list
-      | {% for project_hash in site.data.projects %}
+      | {% for project_hash in site.data.projectcards %}
       | {% assign project = project_hash[1] %}
       li(class="project-card")
         .project-card-inner
