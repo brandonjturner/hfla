@@ -1,0 +1,15 @@
+filename: 
+title: 
+description: 
+image: /assets/images/projectcards/
+links: 
+  - name: Github
+    url: ''
+  - name: Site
+    url: ''
+looking: 
+location: 
+partner: 
+
+Instructions: copy the above fields into new project
+card file and comment out any fields you don't use.
