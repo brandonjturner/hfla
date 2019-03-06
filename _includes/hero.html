@@ -1,0 +1,8 @@
+<header class="hero">
+  <div class="hero-inner">
+    {% for item in site.data.hero %}
+    <h1>{{ item.title }}</h1>
+    <p class="type-featured">{{ item.dek }}</p>
+    {% endfor %} {% include forms/hero-form.html %}
+  </div>
+</header>
