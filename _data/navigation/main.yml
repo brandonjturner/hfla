@@ -1,22 +1,22 @@
 - name: Hack Nights
   link: hack-nights
   listClass:
-  iconUrl: /main-nav-icons/icon-hack-nights
+  iconUrl: /main-nav-icons/icon-hack-nights.svg
   iconClass: icon icon-hack-nights nav-icon
 - name: Projects
   link: projects
   listClass:
-  iconUrl: /main-nav-icons/icon-projects
+  iconUrl: /main-nav-icons/icon-projects.svg
   iconClass: icon icon-hack-nights nav-icon icon icon-projects nav-icon
 - name: Press
   link: press
   listClass:
-  iconUrl: /main-nav-icons/icon-press
+  iconUrl: /main-nav-icons/icon-press.svg
   iconClass: icon icon-hack-nights nav-icon icon icon-projects nav-icon icon icon-press nav-icon
 - name: About
   link: about
   listClass:
-  iconUrl: /main-nav-icons/icon-about
+  iconUrl: /main-nav-icons/icon-about.svg
   iconClass: icon icon-hack-nights nav-icon icon icon-projects nav-icon icon icon-about nav-icon
 - name: Contact Us
   link: contact
