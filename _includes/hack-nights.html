@@ -1,0 +1,20 @@
+section#hack-nights.content-section.section-hack-nights
+.page-contain
+  h2 {{ contents.location.title }}
+  p {{ contents.location.dek }}
+  .locations
+    .location(v-for='location in contents.location.locations')
+      .location-img(:style='{ "background-image": `url(${location.image})` }')
+      .location-details
+        h3.location-header
+        strong {{ location.title }}
+        |  {{ location.date }}
+        address
+          a(:href='location.map', target='_blank').
+            {{ location.address1 }}#[br]
+            {{ location.address2 }}, {{ location.city }}, {{ location.state }} {{ location.zip }}
+  p
+    a(href='https://www.meetup.com/hackforla/',
+      target='_blank').btn.btn-primary RSVP on Meetup
+    a(href='http://hackforla-slack.herokuapp.com/',
+      target='_blank').btn.btn-primary Join our Slack
